@@ -79,6 +79,8 @@ $openBilling = $_GET["id"];
 												<input class="cc-cvc float-label" placeholder="Security Code" type="password" pattern="\d*" style="margin-bottom: 10px;">
 												<a href="#" class="what code js-whats-this">What's this?</a>
 											</div>
+										</div>
+									</label>
 								</span>
 								<span class="paypal  radio-select" style="padding-bottom: 20px;">
 									<input id="Field1_1" name="Field1" type="radio">
