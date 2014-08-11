@@ -1,0 +1,649 @@
+
+
+/* -------- General -------- */
+
+.float-label {
+	margin-bottom: 25px !important;
+}
+
+h1 {
+	margin: 15px 0 20px 0;
+	font-size: 20px !important;
+	text-align: center !important;
+}
+
+.steps {
+	margin-bottom: 24px;
+}
+
+.flow {
+	padding: 0 10px;
+	font-size: 18px;
+	border-bottom: 1px #ccc solid;
+	margin-bottom: 25px;
+}
+
+.flow ul {
+	height: 45px;
+	padding-top: 5px;
+}
+
+.flow ul li {
+	display: block;
+	float: left;
+	padding:5px 11px;
+	padding-bottom: 14px;
+}
+
+.flow ul li:first-child {
+	padding-left: 0;
+}
+
+.flow ul li:last-child {
+	padding-right: 0;
+}
+
+.flow ul li a {
+	color: #222;
+}
+
+.flow .active {
+	background: url(../img/step-arrow.png);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: 18px;
+	font-weight: bold;
+}
+.flow .link a {color: #39c;}
+.flow .inactive { opacity: .5;}
+
+
+/* Buttons */
+.proceed1 {
+	width: 201px;
+	text-transform: uppercase;
+	position: absolute;
+	position: absolute;
+	top: 175px;
+	left: 46px;
+	padding: 13px !important;
+}
+
+.proceed2 {
+	width: 201px;
+	text-transform: uppercase;
+	position: absolute;
+	position: absolute;
+	top: 778px;
+	left: 46px;
+	padding: 13px !important;
+}
+
+.next { text-align: center;}
+.next div { display:inline-table;}
+.next a {display:inline;}
+
+.next a {
+	margin-top: 20px;	
+}
+
+.next .icon {
+	margin-top: 0;
+	background: url(../img/arrow-white.png);
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: 10px;
+	background-position-x: 94%;
+	padding-right: 30px;
+}
+
+/* -------- Sign In -------- */
+
+.signin-cta a {
+	margin-right: 10px;
+	margin-bottom: 30px;
+}
+
+.create h2 {
+	margin-top: 30px;	
+}
+
+.create ul {
+	padding-left: 20px;
+	margin-bottom: 10px;	
+}
+
+.create ul li {
+	list-style-type: disc;
+}
+
+
+
+.forgot {
+	margin-top: -10px;
+	display: block;
+	margin-bottom: 5px;
+	font-size: 15px;
+}
+
+.guest {
+	height: 100px;
+	margin-top: 30px;
+}
+
+.or {
+	text-align: center;
+	display: block;
+	margin: 10px 0;
+}
+
+
+/* -------- Personal g-1 -------- */
+
+
+
+/* -------- Shipping Address g-2 -------- */
+
+.ship-check {
+	margin-bottom: 25px;
+	position: relative;
+	left: -18px;	
+	padding-left: 26px;
+}
+
+.state {
+	-webkit-appearance: menulist-button;
+	width: 100%;
+	height: 36px;
+	margin-bottom: 25px;
+}
+
+.country {
+	-webkit-appearance: menulist-button;
+	width: 100%;
+	height: 36px;
+	margin-bottom: 25px;
+}
+
+
+/* -------- Shipping Options g-3 -------- */
+
+.shipping-options div {
+	display: block;
+	width: 100%;
+	float: left;
+	padding: 10px 0;
+}
+.shipping-options label {
+	padding: 8px;
+}
+
+
+/* -------- Payment g-4 -------- */
+
+.sec {
+	width: 40%;
+	float: right;
+}
+
+.sec a {
+	margin-top: -10px;
+	display: block;
+}
+
+
+.exp {
+	width: 60%;
+	float: left;
+}
+
+.styled-select {
+   background: url(new_arrow.png) no-repeat right #ebebeb;
+   padding: 5px;
+   font-size: 15px;
+   font-style: italic;
+   line-height: 1;
+   border-radius: 3px;
+   border: 1px solid #a2a2a2;
+   height: 36px;
+   -webkit-appearance: none;
+   color: #a2a2a2;
+}
+
+.what {font-size: 16px;}
+.what.code {position: relative; top: -14px; margin-bottom: -10px; left: -40px;}
+.what-phone {font-size: 15px; margin-top: -26px; margin-bottom: 15px; color: #646464;}
+
+.paypal {
+	padding-top: 20px;
+	height: 30px;
+	padding-bottom: 10px;
+}
+.paypal input {
+	float: left;
+	margin-top: 4px;
+}
+.paypal label {
+	float: left;
+	margin-left: 8px;
+}
+.paypal label img {
+	width: 100px;
+}
+
+/*
+.card-fields {
+	width: 275px;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+*/
+
+.card-fields {
+	display: block;
+	height: 136px;
+	border-top: 1px #ccc solid;
+	border-bottom: 1px #ccc solid;
+	padding-top: 25px;
+	margin-top: 5px;
+}
+
+.lable-title {
+	font-size: 0.8em;
+	font-weight: bold;
+	position: absolute;
+	top: -22px;
+}
+
+.month {
+	float: left;
+}
+
+.year {
+	float: left;
+}
+
+.year select {
+	width: 70px;
+}
+
+.dash {
+	float: left;
+	width: 10px;
+	text-align: center;
+	margin-top: 6px;
+}
+
+/* Payment Signed In */
+.saved-cards {
+/* 	border-top: 1px solid #ccc; */
+}
+
+.saved-cards ul li {
+	padding: 10px;
+/* 	border-bottom: 1px solid #ccc; */
+}
+
+.saved-cards ul li p:nth-child(2) {
+	font-size: 16px;
+	color: #646464;
+}
+
+
+.card-number {
+	font-weight: bold;
+	display: block;
+	margin-bottom: -5px;	
+}
+
+/* -------- Summary Page g-4 -------- */
+
+.sum ul li h3 {
+	display: block;
+	margin-bottom: 0px;
+}
+
+.sum ul li a {
+	color: #222;
+}
+
+.sum ul li {
+	margin-bottom: 10px;
+	position: relative;
+	padding: 10px;
+}
+
+.sum ul li:first-child {
+	margin-top: 20px;
+	border: 1px #ccc solid;
+	margin-bottom: 10px;
+	position: relative;
+	padding: 10px;
+}
+
+
+.review-img {
+	height: 145px;
+	overflow: hidden;
+}
+
+
+.arrow {
+	width: 10px;
+	position: absolute;
+	top: 25px;
+	right: 5px;;
+}
+
+.arrowlarg {
+	top: 35px;
+}
+
+.edit {
+	color: #39c !important;
+}
+
+.redeem h4 a {color: #39c !important;}
+
+.order-sum p {
+	display: block;
+}
+
+.review-page h3 {
+	padding-bottom: 5px;
+	margin: 0 !important;
+	
+}
+
+.product-edit {
+	position: relative;
+	top: -16px;
+	left: 69px;
+}
+
+.billing-address {
+	position: relative;
+	border-top: 1px solid #ccc;
+	padding: 15px 0;
+}
+.billing-address a {
+	float: left !important;
+	color: black;
+}
+.billing-address label {
+	padding-left: 5px;
+}
+.billing-address div {
+	margin: 5px 0 10px 0;
+}
+
+.change-billing {
+	margin-top: 10px;
+	display: none;
+}
+
+.open-billing {
+	margin-top: 10px;
+	display: inherit !important;
+}
+
+.order-sec, .shipping-sec, .billing-sec {
+	margin-top: 20px;
+	border: 1px solid #ccc;
+	padding: 10px;
+}
+
+.shipping-sec ul a, .billing-sec ul a {
+	color: #222;
+}
+
+
+.shipping-sec ul li, .billing-sec ul li {
+	padding: 10px 0;
+	position: relative;
+}
+
+.shipping-sec ul li p, .billing-sec ul li p{
+	line-height: 20px;
+}
+
+.shipping-sec ul li p:first-child, .billing-sec ul li p:first-child{
+	font-weight: bold;
+}
+
+
+.product-summary img {
+	width: 50px;
+	float: left;
+}
+.product-summary p {
+	line-height: 20px;
+	float: left;
+	font-size: 16px;
+	color: #646464;
+	padding-left: 10px;
+}
+.product-summary p strong {
+	font-size: 18px;
+	color: #222;
+}
+
+
+/* Review Try 3 */
+
+.order-summary .next {
+	margin: 20px 0 !important;
+	height: 31px;
+}
+
+.review-page3 .order-summary {
+	padding: 0 10px;
+}
+
+.review-page3 .product-summary {
+	height: 60px;
+	padding: 10px 0;
+	border-top: 1px #ccc solid;
+	border-bottom: 1px #ccc solid;
+	margin-bottom: 10px;
+}
+
+.product-summary img {
+	margin-top: 5px;
+}
+
+.subtotals {
+	/* padding: 0 30px; */
+}
+
+.qty {float: left;}
+.tot {float: right !important;}
+
+.group {
+	border-top: 10px solid #e5e5e5;
+	margin: 0 -10px;
+	padding: 10px 20px;
+}
+
+.payment-group {
+	border-top: 10px solid #e5e5e5;
+	border-bottom: 10px solid #e5e5e5;
+	margin: 0 -10px;
+	padding: 10px;
+}
+
+.group ul li {
+	position: relative;
+}
+
+.border-bottom {border-bottom: 1px solid #ccc;}
+.border-top {border-top: 1px solid #ccc;}
+
+.group ul li a {
+	display: block;
+	padding: 10px 0;
+	color: #222;
+}
+
+.review-page3 .redeem {
+	margin-top: 10px;
+}
+
+.review-page3 .redeem a {
+	padding: 0 !important;
+}
+
+.group ul li p {
+	line-height: 20px;
+}
+
+
+
+
+
+
+/*
+    Hide the original radios and checkboxes
+    (but still accessible)
+
+    :not(#foo) > is a rule filter to block browsers
+                 that don't support that selector from
+                 applying rules they shouldn't
+
+*/
+li:not(#foo) > fieldset > div > span > input[type='radio'],
+li:not(#foo) > fieldset > div > span > input[type='checkbox'] {
+
+    /* Hide the input, but have it still be clickable */
+    opacity: 0;
+    float: left;
+    width: 0px;
+}
+
+li:not(#foo) > fieldset > div > span > input[type='radio'] + label,
+li:not(#foo) > fieldset > div > span > input[type='checkbox'] + label {
+    margin: 0;
+    clear: none;
+    /* Left padding makes room for image */
+    padding: 5px 0 4px 30px;
+    /* Make look clickable because they are */
+    cursor: pointer;
+    background: url(../img/off.png) left center no-repeat;
+    background-size: 20px;
+	display: block;
+	line-height: 20px;
+}
+
+/*
+    Change from unchecked to checked graphic
+*/
+li:not(#foo) > fieldset > div > span > input[type='radio']:checked + label {
+    background-image: url(../img/radio.png);
+}
+li:not(#foo) > fieldset > div > span > input[type='checkbox']:checked + label {
+    background-image: url(check.png);
+}
+ 
+.radio-select {
+	float: left;
+	width: 100%;
+	padding: 10px 0;
+}
+
+.payment-methods .paypal {
+	height: 35px;
+	padding-top: 15px;
+}
+
+.creditcard {
+	margin-top: 5px;
+	margin: 5px -10px 0 -10px;
+	border-bottom: 1px solid #e5e5e5;
+	padding: 10px;
+	float: left;
+	width: 100%;
+}
+
+.creditcard label {
+	width: 79%;
+	float: left;
+}
+
+.creditcard a {
+	float: right;
+}
+
+.add-new {
+	width: 100%;
+	display: block;
+}
+
+.add-new a {
+	padding: 10px 0;
+	width: 100%;
+	display: block;
+	text-align: center;
+}
+
+.radio-list .edit {
+	padding: 20px 0;
+}
+
+.sub-light {
+	font-size: 16px !important;
+	color: #646464;
+}
+
+.cancel {
+	margin: 0 10px;
+	padding: 0 10px;
+	margin-top: -33px !important;
+	display: block !important;
+}
+.cancel2 {
+	margin-top: 23px !important;
+	float: left;
+	margin: 0 10px;
+	padding: 0 10px;
+	margin-top: 0; */
+	display: block !important;
+}
+
+
+.full-takeover {
+	padding: 10px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #fff;
+	display: none;
+}
+
+.full-takeover img {
+	margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
