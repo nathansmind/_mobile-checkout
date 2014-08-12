@@ -23,7 +23,11 @@
 								<p style="width: 215px;"><strong>Arc'teryx Alpha SV Jacket</strong></p>
 								<p style="width: 215px;" class="sub-light">Black, M</p><br>
 								<p class="qty">Qty: 1</p>
-								<p class="tot">Total: $674.95</p>
+								<p class="tot">Total: $674.95</p><br>
+<!--
+								<p class="tot">Total: <strike>$674.95</strike></p><br>
+								<p class="sale">$656.95</p>
+-->
 							</div>
 							<div class="clear"></div>
 							<div class="subtotals">

@@ -149,6 +149,11 @@ h1 {
 	position: relative;
 	left: -18px;	
 	padding-left: 26px;
+	margin-top: -7px;
+}
+
+#ship-check {
+	float: left;
 }
 
 .state {
@@ -231,17 +236,9 @@ h1 {
 	width: 100px;
 }
 
-/*
-.card-fields {
-	width: 275px;
-	margin-left: 20px;
-	margin-top: 20px;
-}
-*/
-
 .card-fields {
 	display: block;
-	height: 136px;
+	height: inherit;
 	border-top: 1px #ccc solid;
 	border-bottom: 1px #ccc solid;
 	padding-top: 25px;
@@ -363,8 +360,6 @@ h1 {
 
 .billing-address {
 	position: relative;
-	border-top: 1px solid #ccc;
-	padding: 15px 0;
 	display:none;
 }
 .billing-address a {
@@ -459,6 +454,7 @@ h1 {
 
 .qty {float: left;}
 .tot {float: right !important;}
+.sale {float: right !important; color: #e48325 !important;}
 
 .group {
 	border-top: 10px solid #e5e5e5;
