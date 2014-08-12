@@ -80,7 +80,7 @@
 									</a>
 								</li>
 								<li>
-									<a href="checkout-g-4.php?id=open-billing#billing-section">
+									<a href="checkout-g-2.php?id=open-billing#billing-section">
 										<p><strong>Billing address</strong><p>
 										<p class="billing-name">John Doe<br>
 											123 Snow Street Suite 7 Juneau, Ak...</p>

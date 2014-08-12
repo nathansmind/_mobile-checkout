@@ -1,8 +1,3 @@
-<?php 
-
-$openBilling = $_GET["id"];
-
-?>
 <?php include('inc/head.php'); ?>
 		<div class="flow" style="margin-bottom: 0;">
 			<ul>

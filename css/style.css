@@ -365,6 +365,7 @@ h1 {
 	position: relative;
 	border-top: 1px solid #ccc;
 	padding: 15px 0;
+	display:none;
 }
 .billing-address a {
 	float: left !important;
@@ -377,13 +378,13 @@ h1 {
 	margin: 5px 0 10px 0;
 }
 
+
 .change-billing {
 	margin-top: 10px;
 	display: none;
 }
 
-.open-billing {
-	margin-top: 10px;
+#open-billing .billing-address {
 	display: inherit !important;
 }
 
