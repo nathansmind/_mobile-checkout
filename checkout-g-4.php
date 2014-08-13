@@ -72,7 +72,7 @@
 							
 											<div class="sec">
 												<input class="cc-cvc float-label" placeholder="Security Code" type="number" pattern="\d*" style="margin-bottom: 10px;">
-												<a href="#" class="what code js-whats-this">What's this?</a>
+												<a href="#" class="Whats-this js-whats-this">What's this?</a>
 											</div>
 											
 											<div class="clear"></div>
@@ -168,17 +168,12 @@
 										</div>
 									</label>
 								</span>
-								<span class="paypal  radio-select" style="padding-bottom: 20px; border-top: 1px solid #e5e5e5;">
+								<span class="paypal  radio-select paypal-pay">
 									<input id="Field1_1" name="Field1" type="radio">
 									<label class="choice" for="Field1_1">
-										<strong>Pay with PayPal</strong>
-<!-- 										<img class="paypal-img" src="img/paypal.png"> -->
-									</label>
-<!--
-									<label class="choice" for="Field1_1">
 										<img src="img/paypal.png">
+										<a href="#">What is PayPal?</a>
 									</label>
--->
 								</span>
 							</div>
 						</fieldset>
@@ -186,107 +181,19 @@
 				</ul>
 			</form>
 
-			<div class="redeem payment-group">
-				<h4><a href="#">Apply Redemption Code</a></h4>
-				<h4><a href="#">Apply Gift Certificate</a></h4>
+			<div class="redeem" style="margin-top: 25px;">
+				<h4>Have a <a href="#">promo code</a>?</h4>
+				<h4>Have a <a href="#">gift certificate</a>?</h4>
 			</div>
-						
-<!--
-			<div style="margin-top: 25px; margin-bottom: 5px;">						
-				<input type="checkbox" class="ship-check-btn" checked="true" id="ship-check">
-				<label for="ship-check" class="ship-check">Use shipping address for billing</label>
-			</div>
-
-			<form class="billing-address" style="display:none">
-			<h3 style="margin-bottom: 20px;">Billing Address</h3>
-				<input type="text" placeholder="First Name" class="float-label">
-				<input type="text" placeholder="Last Name" class="float-label">
-				<input type="text" placeholder="Company (Optional)" class="float-label">
-				
-				<div style="position: relative;" class="js-country">
-					<p class="lable-title country-title">Country</p>	
-					<select class="country">
-						<option value="">USA</option>
-						<option value="AL">Canada</option>
-						<option value="AL">Other</option>
-					</select>	
-				</div>
-				
-				<input type="text" placeholder="Street Address" class="float-label" style="margin-bottom: 10px !important;">
-				<input type="text" placeholder="Apartment, Suite, etc."  style="margin-bottom: 25px;">
-				<input type="text" placeholder="City" class="float-label" style="margin-top: 0; width: 48%;">
-				
-				<div style="position: relative; width: 48%; float: right;" class="js-state">
-					<p class="lable-title state-title">Select state</p>	
-					<select class="state">
-						<option value="">Select state</option>
-						<option value="AL">Alabama</option>
-						<option value="AK">Alaska</option>
-						<option value="AZ">Arizona</option>
-						<option value="AR">Arkansas</option>
-						<option value="CA">California</option>
-						<option value="CO">Colorado</option>
-						<option value="CT">Connecticut</option>
-						<option value="DE">Delaware</option>
-						<option value="DC">District Of Columbia</option>
-						<option value="FL">Florida</option>
-						<option value="GA">Georgia</option>
-						<option value="HI">Hawaii</option>
-						<option value="ID">Idaho</option>
-						<option value="IL">Illinois</option>
-						<option value="IN">Indiana</option>
-						<option value="IA">Iowa</option>
-						<option value="KS">Kansas</option>
-						<option value="KY">Kentucky</option>
-						<option value="LA">Louisiana</option>
-						<option value="ME">Maine</option>
-						<option value="MD">Maryland</option>
-						<option value="MA">Massachusetts</option>
-						<option value="MI">Michigan</option>
-						<option value="MN">Minnesota</option>
-						<option value="MS">Mississippi</option>
-						<option value="MO">Missouri</option>
-						<option value="MT">Montana</option>
-						<option value="NE">Nebraska</option>
-						<option value="NV">Nevada</option>
-						<option value="NH">New Hampshire</option>
-						<option value="NJ">New Jersey</option>
-						<option value="NM">New Mexico</option>
-						<option value="NY">New York</option>
-						<option value="NC">North Carolina</option>
-						<option value="ND">North Dakota</option>
-						<option value="OH">Ohio</option>
-						<option value="OK">Oklahoma</option>
-						<option value="OR">Oregon</option>
-						<option value="PA">Pennsylvania</option>
-						<option value="RI">Rhode Island</option>
-						<option value="SC">South Carolina</option>
-						<option value="SD">South Dakota</option>
-						<option value="TN">Tennessee</option>
-						<option value="TX">Texas</option>
-						<option value="UT">Utah</option>
-						<option value="VT">Vermont</option>
-						<option value="VA">Virginia</option>
-						<option value="WA">Washington</option>
-						<option value="WV">West Virginia</option>
-						<option value="WI">Wisconsin</option>
-						<option value="WY">Wyoming</option>
-					</select>	
-				</div>
-				<div class="clear"></div>
-				<input type="number" placeholder="Zip/Postal Code" pattern="\d*" class="float-label">
-				<input type="text" pattern="\d*" placeholder="Phone" class="float-label">
-				<div class="what-phone">Phone numbers are only used for delivery purposes.</div>
-				
-				<div class="clear"></div>			
-			</form>
--->
 
 			<div class="next">	
 				<div>		
-					<a href="checkout-g-5.php" class="btn primary3 blue icon" style="background-position-x: 90%; margin-top: 20px;">Review Order</a>
+					<a href="checkout-g-5.php" class="btn primary3 blue icon" style="margin-top: 20px;">Continue to Review Order</a>
 				</div>
 			</div>
+			
+			<img class="norton" src="img/norton.png">
+			
 		</div>
 		
 		<div class="full-takeover js-whats-this-full">
