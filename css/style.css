@@ -236,6 +236,11 @@ h1 {
 	width: 100px;
 }
 
+.paypal-img {
+	float: right;
+	width: 50px;
+}
+
 .card-fields {
 	display: block;
 	height: inherit;

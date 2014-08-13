@@ -81,10 +81,10 @@
 											
 												<div id="billing-section" style="margin-bottom: 25px;">	
 													<input type="checkbox" class="ship-check-btn" checked="true" id="ship-check">
-													<label for="ship-check" class="ship-check"  style="margin-bottom: 25px;">Use shipping address for billing</label>
+													<label for="ship-check" class="ship-check"  style="margin-bottom: 10px;">Use shipping address for billing</label>
 												</div>
 												<div class="clear"></div>
-												<div class="billing-address">
+													<div class="billing-address" style="margin-top: 15px;">
 												<form style="border-top: none; padding: 0;">
 													<input type="text" placeholder="First Name" class="float-label">
 													<input type="text" placeholder="Last Name" class="float-label">
@@ -171,10 +171,14 @@
 								<span class="paypal  radio-select" style="padding-bottom: 20px; border-top: 1px solid #e5e5e5;">
 									<input id="Field1_1" name="Field1" type="radio">
 									<label class="choice" for="Field1_1">
-										<strong>PayPal</strong>
-										<!-- <strong>Pay with PayPal</strong> -->
-<!-- 										<img src="img/paypal.png"> -->
+										<strong>Pay with PayPal</strong>
+<!-- 										<img class="paypal-img" src="img/paypal.png"> -->
 									</label>
+<!--
+									<label class="choice" for="Field1_1">
+										<img src="img/paypal.png">
+									</label>
+-->
 								</span>
 							</div>
 						</fieldset>
