@@ -1,8 +1,3 @@
-<?php 
-
-$openBilling = $_GET["id"];
-
-?>
 <?php include('inc/head.php'); ?>
 		<div class="flow">
 			<ul>
@@ -22,18 +17,18 @@ $openBilling = $_GET["id"];
 			<form>
 				<input type="email" placeholder="Email" class="float-label">
 				<div class="what-phone" style="margin-bottom: 15px;">Order confirmation will be sent to this email address.</div>
-
-<!--
-				<div class="recognized-email">
-					<strong>Been Here Before?</strong>
-					<a href="#">Sign In</a>
-				</div>
 				
-				<div class="subscribe">
-					<input id="sub" type="checkbox" checked>
-					<label for="sub">Deals, secrets, and reviews - Get Backcountry emails</label>
+				<div class="email-extras">
+					<div class="recognized-email">
+						<strong>Been Here Before?</strong>
+						<a href="checkout-signin.php">Sign In</a>
+					</div>
+				
+					<div class="subscribe">
+						<input id="sub" type="checkbox" checked>
+						<label for="sub">Deals, secrets, and reviews - Get Backcountry emails</label>
+					</div>
 				</div>
--->
 				
 				<input type="text" placeholder="First Name" class="float-label">
 				<input type="text" placeholder="Last Name" class="float-label">
@@ -55,7 +50,7 @@ $openBilling = $_GET["id"];
 				<input type="text" placeholder="City" class="float-label" style="margin-top: 0; width: 48%;">
 				
 				<div style="position: relative; width: 48%; float: right;" class="js-state">
-					<p class="lable-title state-title">Select state</p>	
+					<p class="lable-title state-title">State</p>	
 					<select class="state">
 						<option value="">Select state</option>
 						<option value="AL">Alabama</option>

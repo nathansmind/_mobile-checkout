@@ -1,3 +1,8 @@
+<?php 
+
+$openBilling = $_GET["id"];
+
+?>
 <?php include('inc/head.php'); ?>
 		<div class="flow" style="margin-bottom: 0;">
 			<ul>
@@ -26,7 +31,7 @@
 									<label class="choice" for="Field1_0">
 										<strong>Pay with Card</strong>
 									</label>
-										<div class="card-fields js-card-fields" style="border-top: none; border-bottom: none;margin-top: 20px;">
+										<div class="card-fields js-card-fields" style="border-top: none; border-bottom: none;margin-top: 24px;">
 											<input placeholder="Card Number" class="cc-num float-label" type="text" pattern="\d*">
 											
 											<div class="exp" style="">
@@ -102,7 +107,7 @@
 													<input type="text" placeholder="City" class="float-label" style="margin-top: 0; width: 48%;">
 													
 													<div style="position: relative; width: 48%; float: right;" class="js-state">
-														<p class="lable-title state-title">Select state</p>	
+														<p class="lable-title state-title">State</p>	
 														<select class="state">
 															<option value="">Select state</option>
 															<option value="AL">Alabama</option>
@@ -182,8 +187,27 @@
 			</form>
 
 			<div class="redeem" style="margin-top: 25px;">
-				<h4>Have a <a href="#">promo code</a>?</h4>
-				<h4>Have a <a href="#">gift certificate</a>?</h4>
+				<h4>Have a <a href="javascript:;" class="js-open-promo">promo code</a>?</h4>
+				<div class="promo-form">
+					<input type="text" placeholder="Enter code">
+					<a href="javascript:;" class="btn primary3 blue icon">Redeem</a>
+					<div class="clear"></div>
+				</div>
+				<div class="promo-form-success">
+					<p style="color: red; margin-top: -10px;">There was an error claiming the coupon.</p>
+					<div class="clear"></div>
+				</div>
+				<h4>Have a <a href="javascript:;" class="js-open-cert">gift certificate</a>?</h4>
+				<div class="cert-form">
+					<input type="text" placeholder="Gift Certificate">
+					<input type="text" placeholder="Password">
+					<a href="javascript:;" class="btn primary3 blue icon">Redeem</a>
+					<div class="clear"></div>
+				</div>
+				<div class="cert-form-success">
+					<p style="margin-top: -10px;">Your gift certificate has been applied.</p>
+					<div class="clear"></div>
+				</div>
 			</div>
 
 			<div class="next">	
@@ -197,6 +221,7 @@
 		</div>
 		
 		<div class="full-takeover js-whats-this-full">
+			<div class="close-modal js-close-full-takeover"><img src="img/close-modal.png"></div>
 			<h2>WHAT IS THE CARD SECURITY CODE FOR MY CREDIT CARD?</h2>
 			<p>A card security code is a unique security feature of VISA, MasterCard, Discover, and American Express credit cards. By including it with your order, you help protect your account from fraud and you give us one more way of being sure your order is legitimate.</p>
 			
@@ -214,8 +239,9 @@
 			<p>Depending on which card you have, you'll find this number in small type above your credit card's main number on either the left or right side.</p>
 			<div class="next">	
 				<div>		
-					<a href="javascript:;" class="btn primary3 blue js-close-full-takeover" style="margin-top: 20px;">Done</a>
+					<a href="#" class="btn primary3 blue js-close-full-takeover" style="margin-top: 20px;">Done</a>
 				</div>
 			</div>
+			<div class="modal-footer"></div>
 		</div>
 <?php include('inc/footer.php'); ?>

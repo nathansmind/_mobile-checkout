@@ -23,7 +23,7 @@
 	});
 	
 	$('document').ready(function(){
-		$('.state-title, .month .lable-title, .year .lable-title, .country-title').hide();
+		$('.state-title, .month .lable-title, .year .lable-title, .country-title, .promo-form, .promo-form-success, .cert-form, .cert-form-success').hide();
 		$('.js-state').click(function(){
 			$('.state-title').show();
 		});
@@ -58,8 +58,23 @@
 			$('.full-takeover').hide();
 		});
 		
-		
-		
+		$('.js-open-promo').click(function(){
+			$('.promo-form').show();
+			$('.promo-form-success').hide();
+		});
+		$('.promo-form a').click(function(){
+			$('.promo-form').hide();
+			$('.promo-form-success').show();
+		});
+
+		$('.js-open-cert').click(function(){
+			$('.cert-form').show();
+			$('.cert-form-success').hide();
+		});
+		$('.cert-form a').click(function(){
+			$('.cert-form').hide();
+			$('.cert-form-success').show();
+		});
 		
   	});
 
