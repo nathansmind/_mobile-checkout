@@ -21,6 +21,10 @@ $error = $_GET["status"];
 		</div>
 		<div class="container review-page3 <?php echo $error; ?>" style="margin-top: 20px;">	
 <!-- 			<h1>Review and Place Order</h1> -->
+			<div class="error-messsage">
+				<p style="margin-bottom: 5px;">Invalid credit card expiration</p>
+				<p>Invalid zip/postal code</p>
+			</div>
 			<div class="clear"></div> 
 			<div class="sum2">
 
@@ -117,7 +121,7 @@ $error = $_GET["status"];
 						<div class="group">
 							<ul>
 								<li class="border-bottom">
-									<a href="checkout-g-2.php">
+									<a href="checkout-g-2.php" class="error-text">
 										<p><strong>Shipping address</strong><p>
 										<p class="billing-name">John Doe<br>
 											123 Snow Street Suite 7 Juneau, Ak...</p>
@@ -138,7 +142,7 @@ $error = $_GET["status"];
 						<div class="group payment-methods" style="border-bottom: 10px solid #e5e5e5; margin-bottom: 10px;">
 							<ul>
 								<li>
-									<a href="checkout-g-4.php">
+									<a href="checkout-g-4.php" class="error-text">
 										<p><strong>Payment Method</strong><p>
 										<p>Visa 42*****4242</br>
 											Exp. 11-Nov / 2015</p>
@@ -150,7 +154,7 @@ $error = $_GET["status"];
 			</div>
 
 			<div class="next" style="width: 90%; margin: 0;">			
-				<a href="checkout-g-6.php" class="btn primary3 blue" style="width: 100%;">Submit Your Order</a>
+				<a href="checkout-g-5.php?status=error#" class="btn primary3 blue" style="width: 100%;">Submit Your Order</a>
 			</div>
 		</div>
 <?php include('inc/footer.php'); ?>

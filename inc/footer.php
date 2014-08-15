@@ -23,7 +23,7 @@
 	});
 	
 	$('document').ready(function(){
-		$('.state-title, .month .lable-title, .year .lable-title, .country-title, .promo-form, .promo-form-success, .cert-form, .cert-form-success').hide();
+		$('.state-title, .month .lable-title, .year .lable-title, .country-title, .promo-form, .promo-form-success, .cert-form, .cert-form-success, .email-extras').hide();
 		$('.js-state').click(function(){
 			$('.state-title').show();
 		});
@@ -76,6 +76,19 @@
 			$('.cert-form-success').show();
 		});
 		
+		$(".email-field").blur(function(){
+			$(".email-extras").show();			
+		});
+		
+		
+		$('.error input, .error .state, .error .styled-select').blur(function(){
+			$(this).css('border', '1px solid #a2a2a2');		
+		});
+		
+		$('.state, .error .styled-select').blur(function(){
+			$(this).css('box-shadow', 'none');	
+		});
+
   	});
 
 </script>

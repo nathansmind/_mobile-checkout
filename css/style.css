@@ -771,3 +771,45 @@ li:not(#foo) > fieldset > div > span > input[type='checkbox']:checked + label {
 }
 
 
+/* Error Messaging */
+
+.error-messsage {
+	display: none;
+	border: 1px red solid;
+	color: red;
+	padding: 10px;
+	margin: -10px 0 20px 0;
+}
+
+.error .error-messsage {
+	display: block !important;
+}
+
+.error-messsage p {
+	margin-bottom: 5px;
+}
+
+.error-messsage p:last-child {
+	margin-bottom: 0;
+}
+
+.error input[type="number"], 
+.error input[type="password"], 
+.error input[type="tel"], 
+.error input[type="text"], 
+.error input[type="email"] {
+	border: 1px solid red;
+}
+
+.error .state,
+.error .styled-select {
+	-webkit-box-shadow: 0 0 0 1px red;
+	box-shadow: 0 0 0 1px red;
+	border: none;
+}
+
+
+.error .error-text {
+	color: red;
+}
+

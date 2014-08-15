@@ -1,6 +1,8 @@
 <?php 
 
 $openBilling = $_GET["id"];
+$error = $_GET["status"];
+
 
 ?>
 <?php include('inc/head.php'); ?>
@@ -17,9 +19,13 @@ $openBilling = $_GET["id"];
 				</li>
 			</ul>
 		</div>
-		<div class="container">		
+		<div class="container <?php echo $error; ?>">		
 <!-- 			<h1>Payment info</h1> -->
-
+			<div class="error-messsage" style="margin-top: 10px; margin-bottom: 0px;">
+				<p>Credit card is required</p>
+				<p>Credit card security code is required</p>
+				<p>Invalid credit card expiration</p>
+			</div>
 			<form class="">
 				<ul>
 					<li id="fo143li1" class="notranslatefocused">

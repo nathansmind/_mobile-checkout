@@ -1,3 +1,9 @@
+<?php 
+
+$error = $_GET["status"];
+
+?>
+
 <?php include('inc/head.php'); ?>
 		<div class="flow">
 			<ul>
@@ -12,10 +18,20 @@
 				</li>
 			</ul>
 		</div>
-		<div class="container">		
+		<div class="container <?php echo $error; ?>">		
 <!-- 			<h1>Shipping info</h1> -->
+			<div class="error-messsage">
+				<p>Please enter email</p>
+				<p>Please enter first name</p>
+				<p>Please enter Last name</p>
+				<p>Please enter shipping address</p>
+				<p>Please enter city</p>
+				<p>Please enter state</p>
+				<p>Please enter postal code</p>
+				<p>Please enter phone number</p>			
+			</div>
 			<form>
-				<input type="email" placeholder="Email" class="float-label">
+				<input type="email" placeholder="Email" class="float-label email-field">
 				<div class="what-phone" style="margin-bottom: 15px;">Order confirmation will be sent to this email address.</div>
 				
 				<div class="email-extras">
@@ -32,7 +48,7 @@
 				
 				<input type="text" placeholder="First Name" class="float-label">
 				<input type="text" placeholder="Last Name" class="float-label">
-				<input type="text" placeholder="Company (Optional)" class="float-label">
+				<input type="text" placeholder="Company (Optional)" class="float-label" style="border: 1px solid #a2a2a2;">
 				
 				<div style="position: relative;" class="js-country">
 					<p class="lable-title country-title">Country</p>	
@@ -46,7 +62,7 @@
 <!-- 				<input type="email" placeholder="Email" class="float-label"> -->
 
 				<input type="text" placeholder="Street Address" class="float-label" style="margin-bottom: 10px !important;">
-				<input type="text" placeholder="Apt/Suite # (Optional)"  style="margin-bottom: 25px;">
+				<input type="text" placeholder="Apt/Suite # (Optional)"  style="margin-bottom: 25px; border: 1px solid #a2a2a2;">
 				<input type="text" placeholder="City" class="float-label" style="margin-top: 0; width: 48%;">
 				
 				<div style="position: relative; width: 48%; float: right;" class="js-state">
