@@ -23,7 +23,7 @@
 			<div class="sum2">
 
 						<div class="clear order-summary">
-							<h1 class="sumh3">Review Order</h1>	
+							<h1 class="sumh3" style="margin: 15px 0 5px 0;">Review Order</h1>	
 							
 							<div class="product-summary">
 								<img src="http://www.backcountry.com/images/items/medium/ARC/ARC3678/BK.jpg">
@@ -46,7 +46,7 @@
 									<p class="left">Tax</p>
 									<p class="right">$0.00</p>	
 								</div>
-								<div class="clear">
+								<div class="clear total">
 									<p class="left"><strong>Total</strong></p>
 									<p class="right"><strong>$674.95</strong></p>	
 								</div>
@@ -61,10 +61,42 @@
 						<div class="group redeem">
 							<ul>
 								<li>
-									<h4><a href="#">Apply Discount Code</a></h4>
+									<h4>Have a <a href="javascript:;" class="js-open-promo" style="display: inline;">promo code</a>?</h4>
+									<div class="promo-form">
+										<input type="text" placeholder="Enter code">
+										<a href="javascript:;" class="btn primary3 blue icon">Redeem</a>
+										<div class="clear"></div>
+									</div>
+									<div class="closeextras <?php echo $openextras; ?>">
+										<p style="margin-top:-10px;">Your promo code has been applied.</p>
+										<div class="clear"></div>
+									</div>
 								</li>
 								<li>
-									<h4><a href="#">Apply Gift Certificate</a></h4>
+									<h4>Have a <a href="javascript:;" class="js-open-cert" style="display: inline;">gift certificate</a>?</h4>
+									<div class="cert-form">
+										<input type="text" placeholder="Gift Certificate">
+										<input type="text" placeholder="Password">
+										<a href="javascript:;" class="btn primary3 blue icon">Redeem</a>
+										<div class="clear"></div>
+									</div>
+									<div class="closeextras <?php echo $openextras; ?>">
+										<p style="margin-top:-10px; margin-bottom: 10px;">Your gift certificate has been applied.</p>
+										<div class="clear"></div>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+						<div class="group">
+							<ul>
+								<li>
+									<a href="u-shipping.php?ship=shipping-page-title">
+										<p><strong>Shipping address</strong><p>
+										<p>Nathan Smith<br>
+											1230 W 200 S, Salt Lake City, UT 84...</p>
+										<img class="arrow" src="img/arrow.jpg">
+									</a>
 								</li>
 							</ul>
 						</div>
@@ -75,14 +107,22 @@
 									<fieldset>
 										<div>
 											<input id="radioDefault_1" name="Field1" type="hidden" value="">
-												<span class="border-bottom radio-select creditcard">
+												<span class="border-bottom radio-select creditcard" style="margin: 0 -10px 0 -10px;">
 													<input id="Field1_0" name="Field1" type="radio" checked="checked">
-													<label class="choice" for="Field1_0">
-														<!-- <strong>Pay With Card</strong></br> -->
+													<label class="choice pay-with-card" for="Field1_0">
+														<a href="u-payment.php" style="padding: 0;"><strong>Pay With Card</strong></br>
 														Visa 44*****8092</br>
-														Expiration 01-Jan / 2016
+														Exp. 01 / 2016</a>
 													</label>
-													<a href="u-payment.php">Edit</a>
+													<img class="arrow" src="img/arrow.jpg">
+													<div class="billing-in-payment">
+														<a href="u-shipping.php?bill=billing-page-title">
+															<p><strong>Billing address</strong></p>
+															<p>Nathan Smith<br>
+																1230 W 200 S, Salt Lake City...</p>
+															<img class="arrow" src="img/arrow.jpg">
+														</a>
+													</div>
 												</span>
 												<span class="paypal  radio-select">
 													<input id="Field1_1" name="Field1" type="radio">
@@ -95,67 +135,23 @@
 								</li>
 							</ul>
 						</div>
-						
-						<div class="group">
+
+						<div class="group payment-methods" style="border-bottom: 10px solid #e5e5e5; margin-bottom: 10px;">
 							<ul>
 								<li class="border-bottom">
-									<a href="u-shipping.php">
-										<p><strong>Shipping address</strong><p>
-										<p>Nathan Smith<br>
-											1230 W 200 S, Salt Lake City, UT 84...</p>
-										<img class="arrow" src="img/arrow.jpg">
-									</a>
-								</li>
-								<li>
-									<a href="u-shipping.php">
-										<p><strong>Billing address</strong><p>
-										<p>Nathan Smith<br>
-											1230 W 200 S, Salt Lake City, UT 84...</p>
-										<img class="arrow" src="img/arrow.jpg">
-									</a>
-								</li>
-							</ul>
-						</div>
-								
-						<div class="group" style="border-bottom: 10px solid #e5e5e5; margin-bottom: 10px;">
-							<ul>
-								<li>
 									<a href="checkout-g-3.php">
 										<p><strong>Shipping option</strong></p>
 										<p>Economic (5-10 days) FREE</p>
-										<img class="arrow" src="img/arrow.jpg">
+										<img class="arrow" src="img/arrow.jpg" style="top: 25px;">
 									</a>
 								</li>
-							</ul>
-						</div>
-						
-<!--
-						<div class="group">
-							<ul>						
-								<li>
-									<div class="redeem">
-										<h4 style="margin: 0 0 10px 0;"><a href="#">Apply Discount Code</a></h4>
-										<h4><a href="#" style="margin: 0;">Apply Gift Certificate</a></h4>
-									</div>
-								</li>
-								<li>
-									<div class="gift-option">
-										<input type="checkbox" id="rdo">
-										<label for="rdo"><strong>Add gift option</strong></label>
-									</div>
+								<li class="gift-ship">
+									<input type="checkbox" id="gift">
+									<label for="gift">This shipment is a gift</label>
 								</li>
 							</ul>
 						</div>
--->
-<!--
-					<li class="review-img">
-						<a href="#">
-							<h3>Order Details:</h3>
-							<img class="fullscreen-img" src="img/review.jpg">
-						</a>
-					</li>
-					<a href="cart.html" class="edit product-edit">Edit</a>
--->
+
 
 			</div>
 

@@ -77,7 +77,9 @@
 					</select>	
 				</div>
 				
-				<input type="text" placeholder="Zip/Postal Code" pattern="\d*" class="float-label">				
+				<input type="text" placeholder="Zip/Postal Code" pattern="\d*" class="float-label">		
+				<input type="text" pattern="\d*" placeholder="Phone" class="float-label">
+				<div class="what-phone">Phone numbers are only used for delivery purposes.</div>
 			</form>
 
 			<div class="next">	

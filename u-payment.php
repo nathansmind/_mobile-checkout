@@ -1,6 +1,6 @@
 <?php include('inc/head.php'); ?>
 		<div class="container" style="margin-top: 20px;">		
-<!-- 			<h1>Payment info</h1> -->
+			<h1 style="margin: 15px 0 10px 0;">Payment Method</h1>
 			<form>
 				<div class="saved-cards">
 						<div class="payment-methods">

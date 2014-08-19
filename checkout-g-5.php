@@ -109,10 +109,11 @@ $error = $_GET["status"];
 						<div class="group">
 							<ul>
 								<li>
-									<a href="checkout-g-3.php">
-										<p><strong>Shipping option</strong></p>
-										<p>Economic (5-10 days) FREE</p>
-										<img class="arrow" src="img/arrow.jpg" style="top: 25px;">
+									<a href="checkout-g-2.php" class="error-text">
+										<p><strong>Shipping address</strong><p>
+										<p class="billing-name">John Doe<br>
+											123 Snow Street Suite 7 Juneau, Ak...</p>
+										<img class="arrow" src="img/arrow.jpg">
 									</a>
 								</li>
 							</ul>
@@ -121,10 +122,10 @@ $error = $_GET["status"];
 						<div class="group">
 							<ul>
 								<li class="border-bottom">
-									<a href="checkout-g-2.php" class="error-text">
-										<p><strong>Shipping address</strong><p>
-										<p class="billing-name">John Doe<br>
-											123 Snow Street Suite 7 Juneau, Ak...</p>
+									<a href="checkout-g-4.php" class="error-text">
+										<p><strong>Payment Method</strong><p>
+										<p>Visa 42*****4242</br>
+											Exp. 11 / 2015</p>
 										<img class="arrow" src="img/arrow.jpg">
 									</a>
 								</li>
@@ -141,16 +142,22 @@ $error = $_GET["status"];
 								
 						<div class="group payment-methods" style="border-bottom: 10px solid #e5e5e5; margin-bottom: 10px;">
 							<ul>
-								<li>
-									<a href="checkout-g-4.php" class="error-text">
-										<p><strong>Payment Method</strong><p>
-										<p>Visa 42*****4242</br>
-											Exp. 11-Nov / 2015</p>
-										<img class="arrow" src="img/arrow.jpg">
+								<li class="border-bottom">
+									<a href="checkout-g-3.php">
+										<p><strong>Shipping option</strong></p>
+										<p>Economic (5-10 days) FREE</p>
+										<img class="arrow" src="img/arrow.jpg" style="top: 25px;">
 									</a>
+								</li>
+								<li class="gift-ship">
+									<input type="checkbox" id="gift">
+									<label for="gift">This shipment is a gift</label>
 								</li>
 							</ul>
 						</div>
+
+						
+
 			</div>
 
 			<div class="next" style="width: 90%; margin: 0;">			

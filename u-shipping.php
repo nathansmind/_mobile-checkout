@@ -1,6 +1,12 @@
+<?php 
+
+$bill = $_GET["bill"];
+$ship = $_GET["ship"];
+?>
 <?php include('inc/head.php'); ?>
 		<div class="container" style="margin-top: 20px;">		
-<!-- 			<h1>Shipping info</h1> -->
+			<h1 style="margin: 15px 0 10px 0;" class="s-h1 <?php echo $ship; ?>">Shipping Address</h1>
+			<h1 style="margin: 15px 0 10px 0;" class="s-h1 <?php echo $bill; ?>">Billing Address</h1>
 			<div class="radio-list">
 				<ul>
 					<li id="fo143li1" class="notranslatefocused">
@@ -19,7 +25,7 @@
 									<span class="border-bottom radio-select creditcard">
 										<input id="Field1_1" name="Field1" type="radio">
 										<label class="choice" for="Field1_1">
-											<strong>Dad</strong><br>
+											<strong>Layne Smith</strong><br>
 											473 Oakbrook Circle<br>
 											Logan, UT 84321 US
 										</label>
