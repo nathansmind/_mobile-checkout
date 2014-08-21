@@ -152,6 +152,11 @@ $error = $_GET["status"];
 								<li class="gift-ship">
 									<input type="checkbox" id="gift">
 									<label for="gift">This shipment is a gift</label>
+									<textarea placeholder="Gift message"></textarea>
+								</li>
+								<li class="shipping-location .closeextras <?php echo $error; ?>">
+									<p>Employee Tote Delivery Location</p>
+									<textarea></textarea>
 								</li>
 							</ul>
 						</div>

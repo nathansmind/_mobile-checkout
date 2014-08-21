@@ -21,17 +21,11 @@ $error = $_GET["status"];
 		<div class="container <?php echo $error; ?>">		
 <!-- 			<h1>Shipping info</h1> -->
 			<div class="error-messsage">
-				<p>Please enter email</p>
-				<p>Please enter first name</p>
-				<p>Please enter Last name</p>
-				<p>Please enter shipping address</p>
-				<p>Please enter city</p>
-				<p>Please enter state</p>
-				<p>Please enter postal code</p>
-				<p>Please enter phone number</p>			
+				<p>Please correct the errors below. If you continue to experience issues call customer service at <a href="" >1.800.233.7159</a></p>			
 			</div>
 			<form>
 				<input type="email" placeholder="Email" class="float-label email-field">
+				<div class="what-phone error-input">Email is required</div>
 				<div class="what-phone" style="margin-bottom: 15px;">Order confirmation will be sent to this email address.</div>
 				
 				<div class="email-extras">
@@ -47,7 +41,9 @@ $error = $_GET["status"];
 				</div>
 				
 				<input type="text" placeholder="First Name" class="float-label">
+					<div class="what-phone error-input">First name is required</div>
 				<input type="text" placeholder="Last Name" class="float-label">
+					<div class="what-phone error-input">Last name is required</div>
 				<input type="text" placeholder="Company (Optional)" class="float-label" style="border: 1px solid #a2a2a2;">
 				
 				<div style="position: relative;" class="js-country">
@@ -62,9 +58,11 @@ $error = $_GET["status"];
 <!-- 				<input type="email" placeholder="Email" class="float-label"> -->
 
 				<input type="text" placeholder="Street Address" class="float-label" style="margin-bottom: 10px !important;">
+					<div class="what-phone error-input" style="margin-bottom: 5px; margin-top: -10px;">Street address is required</div>
 				<input type="text" placeholder="Apt/Suite # (Optional)"  style="margin-bottom: 25px; border: 1px solid #a2a2a2;">
-				<input type="text" placeholder="City" class="float-label" style="margin-top: 0; width: 48%;">
 				
+				<input type="text" placeholder="City" class="float-label" style="margin-top: 0; width: 48%;">
+								
 				<div style="position: relative; width: 48%; float: right;" class="js-state">
 					<p class="lable-title state-title">State</p>	
 					<select class="state">
@@ -122,9 +120,15 @@ $error = $_GET["status"];
 						<option value="WY">Wyoming</option>
 					</select>	
 				</div>
+					<div class="what-phone error-input" style="float: left;">City is required</div>
+					<div class="what-phone error-input" style="float: right;margin-right: 50px;">State is required</div>
 				<div class="clear"></div>
+				
+				
 				<input type="number" placeholder="Zip/Postal Code" pattern="\d*" class="float-label">
+					<div class="what-phone error-input">Zip/postal code is required</div>
 				<input type="text" pattern="\d*" placeholder="Phone" class="float-label">
+					<div class="what-phone error-input">Phone number is required</div>
 				<div class="what-phone">Phone numbers are only used for delivery purposes.</div>
 				
 			</form>

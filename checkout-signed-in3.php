@@ -109,13 +109,14 @@
 											<input id="radioDefault_1" name="Field1" type="hidden" value="">
 												<span class="border-bottom radio-select creditcard" style="margin: 0 -10px 0 -10px;">
 													<input id="Field1_0" name="Field1" type="radio" checked="checked">
-													<label class="choice pay-with-card" for="Field1_0">
-														<a href="u-payment.php" style="padding: 0;"><strong>Pay With Card</strong></br>
+													<label class="choice pay-with-card js-show-bill" for="Field1_0">
+														<strong>Pay With Card</strong></br>
+														<a href="u-payment.php" class="js-hide-bill" style="padding: 0;">
 														Visa 44*****8092</br>
 														Exp. 01 / 2016</a>
 													</label>
-													<img class="arrow" src="img/arrow.jpg">
-													<div class="billing-in-payment">
+													<img class="arrow js-hide-bill" src="img/arrow.jpg">
+													<div class="billing-in-payment js-hide-bill">
 														<a href="u-shipping.php?bill=billing-page-title">
 															<p><strong>Billing address</strong></p>
 															<p>Nathan Smith<br>
@@ -124,7 +125,7 @@
 														</a>
 													</div>
 												</span>
-												<span class="paypal  radio-select">
+												<span class="paypal  radio-select js-review-paypal">
 													<input id="Field1_1" name="Field1" type="radio">
 													<label class="choice" for="Field1_1">
 														<img src="img/paypal.png">
@@ -148,6 +149,7 @@
 								<li class="gift-ship">
 									<input type="checkbox" id="gift">
 									<label for="gift">This shipment is a gift</label>
+									<textarea placeholder="Gift message"></textarea>
 								</li>
 							</ul>
 						</div>

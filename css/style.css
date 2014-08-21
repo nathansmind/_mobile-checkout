@@ -770,16 +770,21 @@ li:not(#foo) > fieldset > div > span > input[type='checkbox']:checked + label {
 
 /* Error Messaging */
 
+.error-input {
+	display: none;
+	color: red;
+}
+
 .error-messsage {
 	display: none;
 	border: 1px red solid;
 	color: red;
 	padding: 10px;
-	margin: -10px 0 20px 0;
+	margin: -10px 0 25px 0;
 }
 
-.error .error-messsage {
-	display: block !important;
+.error .error-messsage, .error .error-input {
+	display: block;
 }
 
 .error-messsage p {
@@ -828,6 +833,39 @@ li:not(#foo) > fieldset > div > span > input[type='checkbox']:checked + label {
 	background-position: top left !important;
 }
 
+.gift-ship {
+	padding: 15px 0 10px 0;
+}
 
+.gift-ship label {
+	padding: 0 5px;
+}
 
+.gift-ship textarea {
+	margin: 5px 0 -5px 0;
+	display: none;
+}
 
+.shipping-location p {
+	margin-bottom: 5px;
+	border-top: 1px solid #ccc;
+	padding-top: 15px;
+	margin-top: 4px;
+}
+
+.card-expiration-change {
+	height: 0;
+	opacity: 0;	
+	width: 250px;
+	padding-left: 30px;
+	float: left;
+}
+
+.card-expiration-change .month {
+	width: 44%;
+}
+
+.edit {
+	top: 10px;
+	position: relative;
+}

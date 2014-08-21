@@ -22,9 +22,7 @@ $error = $_GET["status"];
 		<div class="container <?php echo $error; ?>">		
 <!-- 			<h1>Payment info</h1> -->
 			<div class="error-messsage" style="margin-top: 10px; margin-bottom: 0px;">
-				<p>Credit card is required</p>
-				<p>Credit card security code is required</p>
-				<p>Invalid credit card expiration</p>
+				<p>Please correct the errors below. If you continue to experience issues call customer service at 1.800.233.7159</p>			
 			</div>
 			<form class="">
 				<ul>
@@ -39,7 +37,7 @@ $error = $_GET["status"];
 									</label>
 										<div class="card-fields js-card-fields" style="border-top: none; border-bottom: none;margin-top: 24px;">
 											<input placeholder="Card Number" class="cc-num float-label" type="text" pattern="\d*">
-											
+												<div class="what-phone error-input" style="margin-bottom: 5px;">Card Number is required</div>
 											<div class="exp" style="">
 												<div class="clear"></div>
 												
@@ -83,6 +81,7 @@ $error = $_GET["status"];
 							
 											<div class="sec">
 												<input class="cc-cvc float-label" placeholder="Security Code" type="number" pattern="\d*" style="margin-bottom: 10px;">
+												<div class="what-phone error-input" style="margin-bottom: 5px;">Security code is required</div>
 												<a href="#" class="Whats-this js-whats-this">What's this?</a>
 											</div>
 											

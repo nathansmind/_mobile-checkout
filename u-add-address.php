@@ -1,7 +1,7 @@
 <?php include('inc/head.php'); ?>
 		<div class="container" style="margin-top: 20px;">		
 <!-- 			<h1>Shipping info</h1> -->
-			<h4 style="margin-bottom: 25px;">Add Address</h4>
+			<h1 style="margin-bottom: 25px;">Add Address</h1>
 			<form>
 				<input type="text" placeholder="First Name" class="float-label">
 				<input type="text" placeholder="Last Name" class="float-label">

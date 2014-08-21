@@ -82,12 +82,31 @@
 		
 		
 		$('.error input, .error .state, .error .styled-select').blur(function(){
-			$(this).css('border', '1px solid #a2a2a2');		
+			$(this).css('border', '1px solid #a2a2a2');	
+			$(this).parent().next('.error-input').hide();	
 		});
 		
 		$('.state, .error .styled-select').blur(function(){
 			$(this).css('box-shadow', 'none');	
 		});
+		
+		$('.gift-ship input, .gift-ship label').click(function(){
+			$(".gift-ship textarea").toggle(this.checked);	
+		});
+
+		$('.js-review-paypal').click(function(){
+			$(".js-hide-bill").hide();	
+		});
+		$('.js-show-bill').click(function(){
+			$(".js-hide-bill").show();	
+		});
+		
+		$('.js-edit-card').click(function(){
+			$(this).next('.card-expiration-change').css({'opacity' : '1' , 'height' : '92px'});	
+			$('.js-expiration-hide').hide();
+			$(this).hide();
+		});
+		
 
   	});
 
