@@ -1,22 +1,9 @@
+<?php 
+
+$openextras = $_GET["id"];
+
+?>
 <?php include('inc/head.php'); ?>
-<!--
-		<div class="flow">
-			<ul>
-				<li  class="link">
-					<a href="checkout-g-1.php">Personal</a>
-				</li>
-				<li  class="link">
-					<a href="checkout-g-2.php">Shipping</a>
-				</li>
-				<li  class="link">
-					<a href="checkout-g-4.php">Payment</a>
-				</li>
-				<li class="active">
-					<a href="#">Review</a>
-				</li>
-			</ul>
-		</div>
--->
 		<div class="container review-page3" style="margin-top: 20px;">		
 <!-- 			<h1>Review and Place Order</h1> -->
 			<div class="clear"></div> 
@@ -110,7 +97,7 @@
 												<span class="border-bottom radio-select creditcard" style="margin: 0 -10px 0 -10px;">
 													<input id="Field1_0" name="Field1" type="radio" checked="checked">
 													<label class="choice pay-with-card js-show-bill" for="Field1_0">
-														<strong>Pay With Card</strong></br>
+														<strong>Pay with card</strong></br>
 														<a href="u-payment.php" class="js-hide-bill" style="padding: 0;">
 														Visa 44*****8092</br>
 														Exp. 01 / 2016</a>
@@ -129,6 +116,7 @@
 													<input id="Field1_1" name="Field1" type="radio">
 													<label class="choice" for="Field1_1">
 														<img src="img/paypal.png">
+														<a href="#" class="paypal-what">What is PayPal?</a>
 													</label>
 												</span>
 										</div>
@@ -151,6 +139,10 @@
 									<label for="gift">This shipment is a gift</label>
 									<textarea placeholder="Gift message"></textarea>
 								</li>
+								<li class="shipping-location">
+									<p>Employee Tote Delivery Location</p>
+									<textarea></textarea>
+								</li>
 							</ul>
 						</div>
 
@@ -158,7 +150,7 @@
 			</div>
 
 			<div class="next" style="width: 90%; margin: 0;">			
-				<a href="checkout-g-6.php" class="btn primary3 blue" style="width: 100%;">Submit Your Order</a>
+				<a href="checkout-g-6.php" class="btn primary3 blue js-paypal-text" style="width: 100%;">Submit Your Order</a>
 			</div>
 		</div>
 <?php include('inc/footer.php'); ?>

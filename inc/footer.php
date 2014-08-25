@@ -95,10 +95,12 @@
 		});
 
 		$('.js-review-paypal').click(function(){
-			$(".js-hide-bill").hide();	
+			$(".js-hide-bill").hide();
+			$('.js-paypal-text').text('Continue to PayPal');	
 		});
 		$('.js-show-bill').click(function(){
 			$(".js-hide-bill").show();	
+			$('.js-paypal-text').text('Submit Your Order');	
 		});
 		
 		$('.js-edit-card').click(function(){

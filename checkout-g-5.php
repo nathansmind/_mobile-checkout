@@ -40,13 +40,14 @@ $error = $_GET["status"];
 								<img src="http://www.backcountry.com/images/items/medium/SAL/SAL2848/BLARED.jpg">
 								<p style="width: 215px;"><strong>Salomon S-Lab Fellcross 2 Trail Running Shoe - Men's</strong></p>
 								<p style="width: 215px;" class="sub-light">Black/Racing Red/Black, 10.5</p><br>
+								<p class="closeextras <?php echo $openextras; ?> varient-discount">Full Discount Applied - Free With Purchase</p><br>
 								<p class="qty" style="padding-left: 60px; margin-bottom: 10px;">Qty: 1</p>
-								<p class="tot">Total: $135.88</p><br>
+								<p class="tot">Total: $0.00</p><br>
 							</div>
 
 							<div class="clear"></div>
 							<div class="promo-message closeextras <?php echo $openextras; ?>">
-								<p>Employee Discount</p>
+								<p>Full Discount Applied - Free With Purchase</p>
 							</div>
 							<div class="subtotals">
 								<div class="clear">
@@ -71,7 +72,7 @@ $error = $_GET["status"];
 								</div>
 								<div class="clear sub-light closeextras you-save <?php echo $openextras; ?>">
 									<p class="left">You saved</p>
-									<p class="right">$30.00</p>	
+									<p class="right">$174.98</p>	
 								</div>
 							</div>
 						</div>
@@ -154,7 +155,7 @@ $error = $_GET["status"];
 									<label for="gift">This shipment is a gift</label>
 									<textarea placeholder="Gift message"></textarea>
 								</li>
-								<li class="shipping-location .closeextras <?php echo $error; ?>">
+								<li class="shipping-location closeextras <?php echo $openextras; ?>">
 									<p>Employee Tote Delivery Location</p>
 									<textarea></textarea>
 								</li>

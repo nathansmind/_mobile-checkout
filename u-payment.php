@@ -65,7 +65,7 @@
 														<strong>Visa 47*****1234</strong></br>
 														Expiration 02-Feb / 2018
 													</label>
-													<a class="edit js-edit-card" href="javascript:;">Edit</a>
+													<a class="edit js-edit-card2" href="javascript:;">Edit</a>
 												</span>
 												<span class="border-bottom radio-select creditcard">
 													<input id="Field1_2" name="Field1" type="radio">
@@ -74,7 +74,7 @@
 														<strong>Visa 46*****6789</strong></br>
 														Expiration 12-Dec / 2015
 													</label>
-													<a class="edit js-edit-card" href="javascript:;">Edit</a>
+													<a class="edit js-edit-card3" href="javascript:;">Edit</a>
 												</span>
 												<div class="clear"></div>
 												<span class="border-bottom add-new">

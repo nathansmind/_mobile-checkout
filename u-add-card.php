@@ -49,13 +49,13 @@
 					</div>
 	
 					<div class="sec">
-						<input class="cc-cvc float-label" placeholder="Security Code" type="number" pattern="\d*" style="margin-bottom: 10px !important;">
+						<input class="cc-cvc float-label" placeholder="Security Code" type="number" pattern="\d*" style="margin-bottom: 20px !important;">
 						<div class="what-phone error-input" style="margin-bottom: 5px;">Security code is required</div>
 						<a href="#" class="Whats-this js-whats-this">What's this?</a>
 					</div>
 					<div>
 						<input type="checkbox" id="save">
-						<label for="save" style="padding-left: 10px;">Save this card for future use.</label>
+						<label for="save" style="padding-left: 5px;">Save this card for future use.</label>
 					</div>
 				</div>
 			
