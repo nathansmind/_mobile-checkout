@@ -41,6 +41,10 @@ $openextras = $_GET["id"];
 									<p class="left"><strong>Total</strong></p>
 									<p class="right"><strong>$674.95</strong></p>	
 								</div>
+								<div class="clear" style="margin-top: 10px;">
+									<p class="left"><a href="cart.html">Edit Cart</a></p>
+									<p class="right"></p>	
+								</div>
 							</div>
 <!--
 							<div class="next" style="width: 90%; margin: 0;">			

@@ -75,6 +75,10 @@ $error = $_GET["status"];
 									<p class="left">You saved</p>
 									<p class="right">$174.98</p>	
 								</div>
+								<div class="clear" style="margin-top: 10px;">
+									<p class="left"><a href="cart.html">Edit Cart</a></p>
+									<p class="right"></p>	
+								</div>
 							</div>
 						</div>
 						
