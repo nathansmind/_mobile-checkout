@@ -9,7 +9,7 @@ $error = $_GET["status"];
 		<div class="flow">
 			<ul>
 				<li  class="link">
-					<a href="checkout-g-2.php">Shipping</a>
+					<a href="checkout-g-2.php">Addresses</a>
 				</li>
 				<li  class="link">
 					<a href="checkout-g-4.php">Payment</a>
@@ -110,9 +110,17 @@ $error = $_GET["status"];
 						
 						<div class="group">
 							<ul>
-								<li>
+								<li class="border-bottom">
 									<a href="checkout-g-2.php" class="error-text">
 										<p><strong>Shipping address</strong><p>
+										<p class="billing-name">John Doe<br>
+											123 Snow Street Suite 7 Juneau, Ak...</p>
+										<img class="arrow" src="img/arrow.jpg">
+									</a>
+								</li>
+								<li>
+									<a href="checkout-g-2.php?id=open-billing#billing-section">
+										<p><strong>Billing address</strong><p>
 										<p class="billing-name">John Doe<br>
 											123 Snow Street Suite 7 Juneau, Ak...</p>
 										<img class="arrow" src="img/arrow.jpg">
@@ -144,19 +152,11 @@ $error = $_GET["status"];
 						
 						<div class="group">
 							<ul>
-								<li class="border-bottom">
+								<li>
 									<a href="checkout-g-4.php" class="error-text">
 										<p><strong>Payment Method</strong><p>
 										<p>Visa 42*****4242</br>
 											Exp. 11 / 2015</p>
-										<img class="arrow" src="img/arrow.jpg">
-									</a>
-								</li>
-								<li>
-									<a href="checkout-g-4.php?id=open-billing#billing-section">
-										<p><strong>Billing address</strong><p>
-										<p class="billing-name">John Doe<br>
-											123 Snow Street Suite 7 Juneau, Ak...</p>
 										<img class="arrow" src="img/arrow.jpg">
 									</a>
 								</li>
