@@ -80,6 +80,8 @@
 				<input type="text" placeholder="Zip/Postal Code" pattern="\d*" class="float-label">		
 				<input type="text" pattern="\d*" placeholder="Phone" class="float-label">
 				<div class="what-phone">Phone numbers are only used for delivery purposes.</div>
+				<input type="checkbox" id="prim-add">
+				<label for="prim-add">This is my <strong>Primary Shipping Address</strong></label>
 			</form>
 
 			<div class="next">	

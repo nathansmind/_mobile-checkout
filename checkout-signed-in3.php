@@ -33,6 +33,10 @@ $openextras = $_GET["id"];
 									<p class="left">Tax</p>
 									<p class="right">$0.00</p>	
 								</div>
+								<div class="clear sub-light">
+									<p class="left">Credits</p>
+									<p class="right">-$150.00</p>	
+								</div>
 								<div class="clear total">
 									<p class="left"><strong>Total</strong></p>
 									<p class="right"><strong>$674.95</strong></p>	
@@ -90,6 +94,39 @@ $openextras = $_GET["id"];
 
 						<div class="group payment-methods">
 							<ul>
+								<li class="border-bottom">
+									<a href="checkout-g-3.php">
+										<p><strong>Shipping option</strong></p>
+										<p style="margin-bottom: 5px;">Economic (5-10 days) FREE</p>
+										<img class="arrow" src="img/arrow.jpg" style="top: 25px;">
+									</a>
+								</li>
+								<li class="gift-ship">
+									<input type="checkbox" id="gift">
+									<label for="gift">This shipment is a gift</label>
+									<textarea placeholder="Gift message"></textarea>
+								</li>
+<!--
+								<li class="shipping-location">
+									<p>Employee Tote Delivery Location</p>
+									<textarea></textarea>
+								</li>
+-->
+							</ul>
+						</div>
+						
+						<div class="group payment-methods credits">
+							<ul>
+								<li>
+									<input type="checkbox" id="credits" Checked>
+									<label for="credits"><strong>Apply credits $150.00</strong></label>
+									<p>Please submit your credit card info to complete your order. Your card will not be charged.</p>
+								</li>
+							</ul>
+						</div>
+
+						<div class="group payment-methods">
+							<ul>
 								<li id="fo143li1" class="notranslatefocused">
 									<fieldset>
 										<div>
@@ -124,33 +161,25 @@ $openextras = $_GET["id"];
 								</li>
 							</ul>
 						</div>
-
-						<div class="group payment-methods" style="border-bottom: 10px solid #e5e5e5; margin-bottom: 10px;">
+						
+						<div class="group payment-methods donate"  style="border-bottom: 10px solid #e5e5e5; margin-bottom: 10px;">
 							<ul>
-								<li class="border-bottom">
-									<a href="checkout-g-3.php">
-										<p><strong>Shipping option</strong></p>
-										<p>Economic (5-10 days) FREE</p>
-										<img class="arrow" src="img/arrow.jpg" style="top: 25px;">
-									</a>
-								</li>
-								<li class="gift-ship">
-									<input type="checkbox" id="gift">
-									<label for="gift">This shipment is a gift</label>
-									<textarea placeholder="Gift message"></textarea>
-								</li>
-								<li class="shipping-location">
-									<p>Employee Tote Delivery Location</p>
-									<textarea></textarea>
+								<li>
+									<input type="checkbox" id="donate">
+									<label for="donate">Donate $1.00 to The Nature Conservancy?<a href="javascript:;">Learn more</a></label>
+									<img src="https://www.backcountry.com/images/items/medium/TNC/TNC0001/ONECOL.jpg">
 								</li>
 							</ul>
 						</div>
-
 
 			</div>
 
 			<div class="next" style="width: 90%; margin: 0;">			
 				<a href="checkout-g-6.php" class="btn primary3 blue js-paypal-text" style="width: 100%;">Submit Your Order</a>
+			</div>
+			<div class="clear"></div>
+			<div class="sign-out">
+				<p>Not Nathan? <a href="cart.html"><strong>Sign Out</strong></a></p>
 			</div>
 		</div>
 <?php include('inc/footer.php'); ?>

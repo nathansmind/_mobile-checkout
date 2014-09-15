@@ -21,6 +21,7 @@ $ship = $_GET["ship"];
 											Salt Lake City, UT 84010 US
 										</label>
 										<a class="edit" href="u-add-address.php">Edit</a>
+										<p style="padding-top: 5px; display: block; color: #646464; margin-left: 30px; font-size: 16px;">Primary Shipping Address</p>
 									</span>
 									<span class="border-bottom radio-select creditcard">
 										<input id="Field1_1" name="Field1" type="radio">

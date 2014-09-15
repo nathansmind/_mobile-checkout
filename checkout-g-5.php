@@ -41,6 +41,7 @@ $error = $_GET["status"];
 								<p style="width: 215px;"><strong>Salomon S-Lab Fellcross 2 Trail Running Shoe - Men's</strong></p>
 								<p style="width: 215px;" class="sub-light">Black/Racing Red/Black, 10.5</p><br>
 								<p class="closeextras <?php echo $openextras; ?> varient-discount">Full Discount Applied - Free With Purchase</p><br>
+								<p class="closeextras <?php echo $openextras; ?> varient-discount">Place order, ships when available. <a href="javascript:;">Learn more</a></p><br>
 								<p class="qty" style="padding-left: 60px; margin-bottom: 10px;">Qty: 1</p>
 								<p class="tot">Total: $0.00</p><br>
 							</div>
@@ -120,6 +121,27 @@ $error = $_GET["status"];
 							</ul>
 						</div>
 						
+						<div class="group payment-methods">
+							<ul>
+								<li class="border-bottom">
+									<a href="checkout-g-3.php">
+										<p><strong>Shipping option</strong></p>
+										<p style="margin-bottom: 5px;">Economic (5-10 days) FREE</p>
+										<img class="arrow" src="img/arrow.jpg" style="top: 25px;">
+									</a>
+								</li>
+								<li class="gift-ship">
+									<input type="checkbox" id="gift">
+									<label for="gift">This shipment is a gift</label>
+									<textarea placeholder="Gift message"></textarea>
+								</li>
+								<li class="shipping-location closeextras <?php echo $openextras; ?>">
+									<p>Employee Tote Delivery Location</p>
+									<textarea></textarea>
+								</li>
+							</ul>
+						</div>
+						
 						<div class="group">
 							<ul>
 								<li class="border-bottom">
@@ -141,28 +163,15 @@ $error = $_GET["status"];
 							</ul>
 						</div>
 								
-						<div class="group payment-methods" style="border-bottom: 10px solid #e5e5e5; margin-bottom: 10px;">
+						<div class="group payment-methods donate"  style="border-bottom: 10px solid #e5e5e5; margin-bottom: 10px;">
 							<ul>
-								<li class="border-bottom">
-									<a href="checkout-g-3.php">
-										<p><strong>Shipping option</strong></p>
-										<p>Economic (5-10 days) FREE</p>
-										<img class="arrow" src="img/arrow.jpg" style="top: 25px;">
-									</a>
-								</li>
-								<li class="gift-ship">
-									<input type="checkbox" id="gift">
-									<label for="gift">This shipment is a gift</label>
-									<textarea placeholder="Gift message"></textarea>
-								</li>
-								<li class="shipping-location closeextras <?php echo $openextras; ?>">
-									<p>Employee Tote Delivery Location</p>
-									<textarea></textarea>
+								<li>
+									<input type="checkbox" id="donate">
+									<label for="donate">Donate $1.00 to The Nature Conservancy?<a href="javascript:;">Learn more</a></label>
+									<img src="https://www.backcountry.com/images/items/medium/TNC/TNC0001/ONECOL.jpg">
 								</li>
 							</ul>
 						</div>
-
-						
 
 			</div>
 
